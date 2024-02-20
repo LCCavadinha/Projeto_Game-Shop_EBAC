@@ -2,10 +2,19 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 header{
-    padding: 16px 0;
+    padding: 25px 0;
     background-color: #182c61;
     color: #ecf0f1;
+}
+
+header,
+section h2 {
+    font-family: 'Bungee', cursive; 
 }
 
 h1{
@@ -19,14 +28,44 @@ header nav li {
 
 header nav li a {
     color: #ecf0f1;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-decoration: none;
 }
 
-.header-container {
+.header-container,
+.section-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
+}
+
+.section-container img {
+    margin-right: 3.3vw;
+    max-width: 45vw;
+}
+
+.brands-list img {
+    height: 3.1vh;
+    margin-right: 1vw;
+}
+
+.brands-list li {
+    display: inline;
+}
+
+section {
+    padding: 24px 0;
+    color:  #182c61;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    font-size: 1.3rem;
+}
+
+section p {
+    margin-bottom: 8px;
 }
