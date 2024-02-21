@@ -2,7 +2,9 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+input,
+textarea {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -13,7 +15,9 @@ header{
 }
 
 header,
-section h2 {
+section h2,
+section h3,
+form button {
     font-family: 'Bungee', cursive; 
 }
 
@@ -33,7 +37,8 @@ header nav li a {
 }
 
 .header-container,
-.section-container {
+.section-container,
+.footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,4 +73,77 @@ section h2 {
 
 section p {
     margin-bottom: 8px;
+}
+
+/* Início da estilização da seção contatos */
+
+.section-contacts {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 25vw;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.contacts-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Propriedade resize usada para que o tamanho da caixa de mensagem não possa ser alterada pelo usuário. */
+form textarea {
+    resize: none;
+    height: 23.2vh;
+}
+
+.social-links img {
+    height: 3.1vh;
+    margin-right: 1vw;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+section h3 {
+    margin-bottom: 2vh;
+}
+
+form button {
+    background-color: #182c61;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #2b468e;
+}
+
+input:focus,
+textarea:focus {
+    color: #182c61;
+}
+
+/* Início da estilização do Footer */
+
+footer {
+    padding: 12px 0;
+    background-color: #182c61;
+    color: #ecf0f1;
 }
