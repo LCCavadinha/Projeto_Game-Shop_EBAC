@@ -31,9 +31,25 @@ header nav li {
 }
 
 header nav li a {
+    display: inline-block;
     color: #ecf0f1;
     font-size: 1.1rem;
     text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+header nav li a:hover {
+    transform: scale(1.05);
+}
+
+.header-container a {
+    text-decoration: none;
+    color: #ecf0f1;
+    transition: transform 0.3s ease;
+}
+
+.header-container a:hover {
+    transform: scale(1.05);
 }
 
 .header-container,
@@ -100,6 +116,10 @@ form button {
     justify-content: space-between;
 }
 
+.contacts-methods p {
+    margin-bottom: 7vh;
+}
+
 /* Propriedade resize usada para que o tamanho da caixa de mensagem não possa ser alterada pelo usuário. */
 form textarea {
     resize: none;
@@ -132,13 +152,33 @@ form button {
 }
 
 form button:hover{
-    background-color: #2b468e;
+    background-color: #243d83;
 }
 
 input:focus,
 textarea:focus {
     color: #182c61;
 }
+
+.search-link {
+    display: inline-block;
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 12px;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    /* Seletor para adcionar uma transição suave */
+    transition: transform 0.3s ease
+}
+
+/* seletor transform usado para que o botão dê uma leve aumentada quando o cursor passar por cima */
+.search-link:hover {
+    background-color: #243d83;
+    transform: scale(1.05);
+}
+
 
 /* Início da estilização do Footer */
 
