@@ -187,3 +187,29 @@ footer {
     background-color: #182c61;
     color: #ecf0f1;
 }
+
+/* Estilização do formulário */
+
+.questions {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.questions, .question1,
+.question2, .question3,
+.question4, .question5,
+.question6 {
+    margin-bottom: 15px;
+}
+
+/* Estilização do label deixando a opção selecionada em itálico,negrito e sublinhada */
+input[type="radio"]:checked + label {
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+}
+
